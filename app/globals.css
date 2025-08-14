@@ -1,0 +1,80 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 240 70% 50%;
+    --accent: 180 70% 50%;
+    --bg: 220 20% 98%;
+    --surface: 220 20% 100%;
+    --text-primary: 220 20% 15%;
+    --text-secondary: 220 20% 40%;
+  }
+  
+  body {
+    @apply bg-bg text-text-primary font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white px-4 py-3 rounded-md transition-all duration-fast ease-default shadow-sm hover:shadow-md active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface hover:bg-gray-50 text-text-primary border border-gray-200 px-4 py-3 rounded-md transition-all duration-fast ease-default shadow-sm hover:shadow-md active:scale-95;
+  }
+  
+  .btn-icon {
+    @apply bg-surface hover:bg-gray-50 text-text-primary border border-gray-200 p-3 rounded-md transition-all duration-fast ease-default shadow-sm hover:shadow-md active:scale-95;
+  }
+
+  .card {
+    @apply bg-surface border border-gray-100 rounded-lg p-6 shadow-card;
+  }
+
+  .move-button {
+    @apply w-20 h-20 rounded-lg border-2 border-gray-200 flex items-center justify-center text-2xl transition-all duration-fast ease-default hover:border-primary hover:bg-primary/5 active:scale-95;
+  }
+
+  .move-button.selected {
+    @apply border-primary bg-primary/10;
+  }
+
+  .move-button.winner {
+    @apply border-green-500 bg-green-50 animate-bounce-scale;
+  }
+
+  .display-text {
+    @apply text-3xl font-semibold;
+  }
+
+  .heading-text {
+    @apply text-xl font-bold;
+  }
+
+  .body-text {
+    @apply text-base leading-7;
+  }
+
+  .caption-text {
+    @apply text-sm text-text-secondary;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceScale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Farcaster RPS Showdown",
+  "description": "Farcaster RPS Showdown is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://b4e88840-b6f2-4741-acfa-e8ffcf03572a.vistara.dev",
+  "properties": {
+    "app": {
+      "name": "Farcaster RPS Showdown",
+      "description": "Farcaster RPS Showdown is a Base Mini App built with Zara.",
+      "url": "https://b4e88840-b6f2-4741-acfa-e8ffcf03572a.vistara.dev",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
